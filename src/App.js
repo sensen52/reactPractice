@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState,useEffect} from 'react';
+import InputComp from './Component/InputComp'
 
 function App() {
+  const test = new Array(10).fill({name:'leejaewon', id: 'nea4182'})
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div id='app'>
+      {
+        test.map((value,index)=>{
+          return <div>{value}</div>
+        })
+      }
+      {/* <InputComp/> */}
     </div>
   );
 }

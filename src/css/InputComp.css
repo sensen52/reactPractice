@@ -1,0 +1,15 @@
+#input-comp > input{
+    width: 300px;
+    height: 50px;
+    display: block;
+  }
+#input-comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+#input-comp label:nth-child(3){margin-top: 50px;}
+#input-comp label:nth-child(1){margin-top: 150px;}
+button{width: 130px;height: 50px;background-color: indigo;color: white;}
+  
+  
